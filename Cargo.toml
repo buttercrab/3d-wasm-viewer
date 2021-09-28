@@ -1,0 +1,17 @@
+[package]
+name = "object-viewer"
+version = "0.1.0"
+edition = "2021"
+authors = ["Jaeyong Sung <jaeyong0201@gmail.com>"]
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2.78"
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.28"
+
+[profile.release]
+opt-level = "s"
